@@ -3,7 +3,8 @@ import Shop from './components/Shop/Shop';
 
 function App() {
   return (
-    <div className="App">
+    <div>
+      <h1 className='title'>Eyeglass Corner</h1>
       <Shop></Shop>
     </div>
   );
