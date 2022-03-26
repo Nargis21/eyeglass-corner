@@ -1,0 +1,7 @@
+.glasses-container{
+    display: flex;
+    align-items: center;
+}
+.glasses-container img{
+    width: 80px;
+}

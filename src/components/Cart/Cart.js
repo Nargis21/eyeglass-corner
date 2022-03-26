@@ -1,6 +1,7 @@
 
 import { useState } from 'react';
 import Glass from '../Glass/Glass';
+import Glasses from '../Glasses/Glasses';
 import './Cart.css'
 const Cart = ({ cart, removeToCart }) => {
     const [glass, setGlass] = useState([])
@@ -16,8 +17,8 @@ const Cart = ({ cart, removeToCart }) => {
         <div>
             <h2>Selected Glasses</h2>
             {
-                product.map(details => <h4 key={details.id}>{details.name}</h4>)
-            }
+                product.map(details => <Glasses key={details.id} details={details}></Glasses>
+                )}
             <button onClick={() => chooseAnyOne(product)} className='choose-btn'><h4>Choose 1 for me</h4></button>
             <button onClick={() => removeToCart()} className='choose-btn'><h4>Choose Again</h4></button>
             <Glass glass={glass}></Glass>
