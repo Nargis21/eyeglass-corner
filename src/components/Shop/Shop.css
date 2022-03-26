@@ -16,3 +16,12 @@ padding: 20px;
 background-color: white;
 margin: 10px;
 }
+@media screen and (max-width: 688px) {
+    .products-container{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .shop-container{
+        grid-template-columns: repeat(1,1fr);
+    }
+
+}
