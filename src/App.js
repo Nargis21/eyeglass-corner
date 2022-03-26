@@ -6,6 +6,7 @@ function App() {
   return (
     <div>
       <h1 className='title'>Eyeglass Corner</h1>
+      <h1 className='title2'>Choose 4 Glasses</h1>
       <Shop></Shop>
       <Question></Question>
     </div>

@@ -18,9 +18,18 @@ const products = [
 ]
 const Shop = () => {
     const [cart, setCart] = useState([])
-    const addToCart = (product) => {
-        const newCart = [...cart, product]
-        setCart(newCart)
+    const addToCart = (selectedProduct) => {
+        let newCart = [];
+        const exists = cart.find(product => product.id === selectedProduct.id);
+        if (!exists) {
+            newCart = [...cart, selectedProduct]
+            if (newCart.length <= 4) {
+                setCart(newCart)
+            }
+        }
+        else {
+            return
+        }
     }
     const removeToCart = () => {
         const newCart = [];
